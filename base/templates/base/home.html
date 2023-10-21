@@ -1,0 +1,71 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aadesh Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'styles/main.css' %}"/>
+
+  </head>
+  <body>
+  <!-- Home-1 -->
+  {% include 'slider.html' %}
+    <section id="about">
+      <div class="container gy-4 ">
+        <div style="display: flex; justify-content:space-between;">
+          <div class="col-lg-5" data-aos="fade-right"  >
+            <div class="row align-items-center justify-content-end">
+              <div style="display: flex; flex-direction:column; align-items: center;">
+                <img src="/static/images/clock.png" style="width:250px; height:250px; padding-bottom:100px; margin-right:15px;  object-fit: contain;">
+                <div style="width:200px;"><h1 style="width:200px; padding-bottom:50px;">Schedule</h1></div>
+                <div style="width:175px;"><h3 style="width:175px; padding-bottom:25px;">EVERYDAY</h3></div>
+                <div style="width:275px;"><h4 style="width:275px;">10:00 a.m. to 12:00 a.m.</h4></div>
+              </div>
+            </div>        
+          </div>
+          <div class="col-lg-5" data-aos="fade-left" data-aos-delay="50">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31352.762858912207!2d78.64086791083986!3d10.804008300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf5247a680919%3A0x611c2e30270b298c!2sCourtyard%20by%20Marriott%20Tiruchirappalli!5e0!3m2!1sen!2sin!4v1697738539158!5m2!1sen!2sin" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Home-2 -->
+  <section style="background-color: whitesmoke;">
+    <div class="container gy-4">
+      <div class="row gy-4 align-items-center justify-content-between">
+        <div class="col-lg-5" data-aos="fade"  >
+          <img src="/static/images/about.jpg" class="logo-about" alt="">            
+        </div>
+        <div class="col-lg-5" data-aos="fade" data-aos-delay="50">
+          <h1>CRIPSY</h1>
+          <div class="divider my-4"></div>
+          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p>
+          <a href="{% url 'about' %}" class="btn btn-brand">KNOW MORE</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1000,
+        delay:75,
+        once:true
+      });
+    </script>
+  </body>
+</html>
+
+{% endblock %}

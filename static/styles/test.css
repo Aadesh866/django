@@ -1,0 +1,22 @@
+.querry-container{
+  margin:0px;
+  height:650px;
+  width:100%;
+  background-color:rgb(228, 203, 163);
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.querry-text{
+  font-family: 'Raleway';
+  font-size: 100px;
+  line-height: 120px;
+  font-weight: 900;
+  color: #ffffff
+}
+
+.call:hover{
+  color:#f7ab55;
+}
+

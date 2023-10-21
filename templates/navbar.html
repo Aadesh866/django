@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aadesh Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static '../static/styles/main.css' %}"/>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow sticky-top" >
+  <div class="container h-100 d-flex align-items-center justify-content-center">
+    <a class="navbar-brand" href="{% url 'home' %}">
+      <img src="/static/images/irina-biswas-crispy-logo.jpg" class="logo-navbar">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="navbar-container">
+          <a class="nav-link-1 active-link" aria-current="page" href="{% url 'home' %}">Home</a><div class="underline"></div>
+        </li>
+        <li class="navbar-container">
+          <a class="nav-link-1" href="{% url 'about' %}">About</a><div class="underline"></div>
+        </li>
+        <li class="navbar-container">
+          <a class="nav-link-1" href="{% url 'menu' %}">Menu</a><div class="underline"></div>
+        </li>
+        <li class="navbar-container">
+          <a class="nav-link-1" href="{% url 'features' %}">Features</a><div class="underline"></div>
+        </li>
+        <li class="navbar-container">
+          <a class="nav-link-1" href="{% url 'reservation' %}">reservation</a><div class="underline"></div>
+        </li>
+      </ul>
+          <div class="social-links d-flex align-items-between justify-content-between" style="width:100px;">
+      <a href=""><img src="/static/images/instagram-logo.svg" style="width: 24px;
+      height:24px;"></a>
+      <a href=""><img src="/static/images/facebook-circle-fill.svg" style="width: auto;
+        height:auto;"></a>
+      <a href=""><img src="/static/images/twitter-x-fill.svg" style="width: 24px;
+        height:24px;"></a>
+    </div> 
+    </div>
+ 
+  </div>
+</nav>
+</script>
+</body>
+</html>
+

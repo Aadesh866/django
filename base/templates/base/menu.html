@@ -1,0 +1,481 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aadesh Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static '../static/styles/main.css' %}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  </head>
+  <body>
+    <div id="hero" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item text-center slide-1 vh-100 active" style=" background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/menu.jpg);  background-repeat: no-repeat;
+        background-position:cover;
+        background-size: cover;">
+          <div class="container h-100 d-flex align-items-center justify-content-center">
+            <div class="row justify-content-center">
+              <div class="col-lg-8"  data-aos="fade-down" >
+                <h1 class="display-1 fw-bold text-white">MENU</h1>
+                <h6 class="fw-bold text-white" data-aos="fade-up" data-aos-duration="1250">HandPickable Autenticated Food Items</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section id="menu" class="bg-light">
+      <div class="container" data-aos="fade-down">
+        <div class="row">
+          <div class="col-12 intro-text">
+            <h1>Explore our Menu </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Tabs -->
+      <div class="container" data-aos="fade-up">
+        <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All Items</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-breakfast-tab" data-bs-toggle="pill" data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast" aria-selected="true">Breakfast</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Lunch</button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link " id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-dinner" aria-selected="true">Dinner</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active " id="pills-all" role="tabpannel" aria-labelledby="pills-all-tab" tabindex="0">
+
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m1.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.5)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">Pizza</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m10.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">Cake</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m9.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.5)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">PRETZEL </a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m4.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">French Fries</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m5.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">Subway</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m6.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">StarBucks</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m7.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">KFC</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m8.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">Drinks</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="tab-pane fade show " id="pills-breakfast" role="tabpannel" aria-labelledby="pills-breakfast-tab" tabindex="0">
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m5.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.0)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">Subway</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m6.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">StarBucks</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m7.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">KFC</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+
+          <div class="tab-pane fade show " id="pills-lunch" role="tabpannel" aria-labelledby="pills-lunch-tab" tabindex="0">
+            <div class="row gy-4">
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m9.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.5)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">PRETZEL </a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m4.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">French Fries</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m5.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">Subway</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m8.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">Drinks</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="tab-pane fade show " id="pills-dinner" role="tabpannel" aria-labelledby="pills-dinner-tab" tabindex="0">
+            <div class="row gy-4">
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m1.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.5)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">Pizza</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m10.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">Cake</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m9.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(4.5)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">PRETZEL </a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="menu-item bg-white shadow-on-hover">
+                  <img src="/static/images/m8.jpg" class="m" alt="">
+                  <div class="menu-item-content p-4">
+                    <div>                     
+                      <span class="stars">
+                        <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                      </span>
+                      <span>(5.4)</span>
+                    </div>
+                    <h5 class="mt-2 mb-2"><a href="#">Drinks</a></h5>
+                    <p class="small">Excepteur sint occaecat cupidatat non proident, su</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+      </div>
+      </div>
+      
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration:1000,
+        delay:75,
+        once:true
+      });
+    </script>
+  </body>
+</html>
+
+{% endblock %}
