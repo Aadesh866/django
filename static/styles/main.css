@@ -91,14 +91,14 @@ img{
 
 /* Slider */
 .slide-1{
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/slider-1.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image/s1.jpg);
   background-repeat: no-repeat;
   background-position:cover;
   background-size: cover;
 }
 
 .slide-2{
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/slider-2.jpg);
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image/s2.jpg);
   background-repeat: no-repeat;
   background-position:cover;
   background-size: cover;
@@ -174,7 +174,10 @@ section{
 
 
 #features{
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/features.jpg);
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/image/s10.jpg);
+  background-repeat: no-repeat;
+  background-position:cover;
+  background-size: cover;
 }
 
 .feature{
@@ -196,7 +199,10 @@ section{
 
 /* Reviews */
 #reviews{
-  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/client\ saying.jpg);
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/image/s8.jpg);
+  background-repeat: no-repeat;
+  background-position:cover;
+  background-size: cover;
 }
 .review img{
   width:75px;
