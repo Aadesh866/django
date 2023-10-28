@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-o9y$-qvi&s!t753l4$hml8owumvjxr4c6uhx+z4uouunj_h$p1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["blueprintapp.onrender.com"]
 
 
 # Application definition
